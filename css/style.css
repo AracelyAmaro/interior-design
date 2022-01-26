@@ -139,11 +139,7 @@ img{
     .nav-menu.show{
         display: flex;
         background-color:#181719 ;
-    }
-    body{
-        background-color: red;
-    }
-   
+    }   
     .centro{
         gap: 2em 0;
     }
@@ -167,6 +163,4 @@ img{
         display: block;
     }
 }
-@media screen and (max-widht:480){
-    
-}
+
