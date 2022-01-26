@@ -63,11 +63,13 @@ body{
 }
 .centro{
     height: calc(100%-90px);
-    padding: 80px 77px;
+    padding: 7% 6%;
     display: flex;
-    flex-wrap: wrap;
+    /* display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 2fr; */
     gap: 20px;
-    justify-content: space-around;
+    /* justify-content: space-around; */
 }
 h1{
     font-size: 48px;
@@ -75,21 +77,27 @@ h1{
     /* margin: 1em 0em; */
 }
 .title{
+    width: 100%;
     display: flex;
-    gap: 2em;
+    gap: 2%;
     flex-direction: column;
     justify-content: center;
+
 }
 .description{
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 300;
-    width: 410px;
+
 }
 a{
     color: inherit;
 }
 img{
-    height: 500px;
+    /* height: 500px; */
+    width: 100%;
+}
+.img{
+    justify-content: flex-end;
 }
 .zoom{
     transition: transform 0.5s;
@@ -101,7 +109,7 @@ img{
     font-size: 14px;
     color: #A9A9A9;
     text-align: center;
-    padding: 0.75em 0em;
+    padding: 0.5em 0em;
 }
 .hamburguer{
     color: white;
@@ -121,7 +129,12 @@ img{
     .nav-link{
         font-size: 15px;
     }
-    
+    h1{
+        font-size: 35px;
+    }
+    .description,.more{
+        font-size: 18px;
+    }
 }
 @media screen and (max-width:700px){   
     .nav{
@@ -140,10 +153,8 @@ img{
         background-color:#181719 ;
     }   
     .centro{
-        gap: 2em 0;
-    }
-    img{
-        height: 350px;
+        display: flex;
+        flex-direction: column;
     }
     .logo{
         font-size: 25px;
@@ -155,9 +166,7 @@ img{
     h1{
         font-size: 30px;
     }
-    .description,.more{
-        font-size: 18px;
-    }
+    
     .hamburguer{
         display: block;
     }
